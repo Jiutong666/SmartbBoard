@@ -9,7 +9,7 @@ I am using the code edited by IntelliJ IDEA,sqlite3,SceneBuilder.
 
 - [Background](#background)
 - [Install](#install)
-- [Edit the view](#Edit the view)
+- [Edit the view]#(Edit the view)
 - [Edit the database](#Edit database)
 - [Usage](#usage)
 - [How to use Program ](#How to use Program )
