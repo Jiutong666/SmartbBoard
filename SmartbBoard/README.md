@@ -1,4 +1,4 @@
-## Assignment 2
+##  SmartbBoard
 
 This is an README file SmartbBoard.
 
