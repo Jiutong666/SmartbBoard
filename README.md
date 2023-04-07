@@ -25,11 +25,11 @@ It can application to enable teams to manage any sized collaborative projects fr
 This project uses javafx,sqlite3,SceneBuilder. Go check them out if you don't have them locally installed.
 
 
-##Edit the view
+## Edit the view
 There are a lot of fxml file in sample package, you can edit by SceneBuilder.
 
 
-##Edit the database
+## Edit the database
 I use sqlite3, you can see ass2.db, it contains columns,items,projects,tasks,users table.
 
 
@@ -52,7 +52,7 @@ This is only a sample package,you can click it, and find main class then click i
     }
  
  
-##How to use Program 
+## How to use Program 
 You should click "on create a new user" button before you Sign in
 In "create a new user" page you can type your username,password,name and picture, by the way ,you can't create same username.
 Then you can type correct username and password and Sign in now 
@@ -63,7 +63,7 @@ The other function is you can click profie button to change some information of 
 
 
 
-##Author
+## Yuncong Ji
 
 
 
