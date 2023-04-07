@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SmartBoardController">
+    <children>
+        <MenuButton layoutY="3.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="111.0" text="Workspace">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#addProject" text="New Project" />
+            </items>
+        </MenuButton>
+        <MenuButton layoutX="113.0" layoutY="3.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="111.0" text="Project">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#addColumn" text="Add column" />
+                <MenuItem mnemonicParsing="false" onAction="#reName" text="Rename" />
+                <MenuItem mnemonicParsing="false" onAction="#setDefault" text="Set as default" />
+                <MenuItem mnemonicParsing="false" onAction="#unsetDefault" text="Unset default" />
+                <MenuItem mnemonicParsing="false" onAction="#delete" text="Delete" />
+            </items>
+        </MenuButton>
+        <ProgressBar layoutY="32.0" prefHeight="42.0" prefWidth="1090.0" progress="0.0" AnchorPane.bottomAnchor="557.0" AnchorPane.topAnchor="32.0" />
+        <Label fx:id="quote" layoutX="22.0" layoutY="35.0" prefHeight="29.0" prefWidth="860.0" textFill="#b23a3a">
+            <font>
+                <Font name="Modern No. 20" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="profileBut" layoutX="906.0" layoutY="38.0" mnemonicParsing="false" onAction="#profile" prefHeight="24.0" prefWidth="68.0" text="Profile" AnchorPane.bottomAnchor="563.0" AnchorPane.topAnchor="38.0" />
+        <Button fx:id="logoutBut" layoutX="995.0" layoutY="38.0" mnemonicParsing="false" onAction="#logOut" prefHeight="24.0" prefWidth="68.0" text="Log out" AnchorPane.bottomAnchor="563.0" AnchorPane.topAnchor="38.0" />
+        <TabPane fx:id="tabPan" layoutY="68.0" prefHeight="558.0" prefWidth="1090.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+            </tabs>
+        </TabPane>
+        <ScrollPane fx:id="scpanel" layoutX="-1.0" layoutY="106.0" prefHeight="495.0" prefWidth="1090.0" visible="true">
+            <content>
+                <HBox fx:id="hbox" prefHeight="519.0" prefWidth="803.0">
+                    <children>
+                        <VBox layoutX="1.0" layoutY="2.0" prefHeight="515.0" prefWidth="249.0">
+                            <children>
+                                <AnchorPane prefHeight="65.0" prefWidth="244.0">
+                                    <children>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="143.0" prefWidth="249.0" />
+                                <AnchorPane prefHeight="130.0" prefWidth="249.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </content>
+        </ScrollPane>
+      <ImageView fx:id="uploadImage" fitHeight="29.0" fitWidth="37.0" layoutX="764.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="561.0" AnchorPane.leftAnchor="764.0" AnchorPane.rightAnchor="289.0" AnchorPane.topAnchor="35.0" />
+      <Label fx:id="nameField" layoutX="813.0" layoutY="38.0" prefHeight="24.0" prefWidth="83.0" AnchorPane.leftAnchor="813.0" />
+    </children>
+</AnchorPane>

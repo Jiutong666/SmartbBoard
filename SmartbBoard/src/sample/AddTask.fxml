@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="629.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddTaskController">
+    <children>
+        <ScrollPane prefHeight="629.0" prefWidth="671.0">
+            <content>
+                <AnchorPane prefHeight="628.0" prefWidth="664.0">
+                    <children>
+                  <CheckBox fx:id="completed" layoutX="466.0" layoutY="155.0" mnemonicParsing="false" text="Mark as completed" />
+                        <TextField fx:id="taskField" layoutX="159.0" layoutY="62.0" prefHeight="27.0" prefWidth="347.0" text="" />
+                        <Button layoutX="572.0" layoutY="442.0" mnemonicParsing="false" onAction="#addTask" text="OK" />
+                        <Button layoutX="572.0" layoutY="522.0" mnemonicParsing="false" onAction="#close" text="Cancel" />
+                        <Label layoutX="159.0" layoutY="36.0" text="Task" />
+                        <Label layoutX="165.0" layoutY="183.0" prefHeight="17.0" prefWidth="67.0" text="Description" />
+                        <TextArea fx:id="descField" layoutX="165.0" layoutY="214.0" prefHeight="200.0" prefWidth="347.0" text="" />
+                        <Label fx:id="showDueDate" layoutX="162.0" layoutY="111.0" onMouseClicked="#showDueDate" text="Add due date" textFill="#2381c9" underline="true" />
+                        <DatePicker fx:id="picker" layoutX="162.0" layoutY="151.0" visible="false" />
+                        <Label fx:id="dueDate" layoutX="165.0" layoutY="111.0" prefHeight="17.0" prefWidth="67.0" text="Due  date" visible="false" />
+                        <Label fx:id="closeDue" layoutX="288.0" layoutY="111.0" onMouseClicked="#closeDue" text="Delete" textFill="#2381c9" underline="true" visible="false" />
+                        <Label fx:id="showCheck" layoutX="162.0" layoutY="446.0" onMouseClicked="#showCheck" text="Add checklist" textFill="#2381c9" underline="true" />
+                        <Label fx:id="checklist" layoutX="186.0" layoutY="446.0" text="Checklist" visible="false" />
+                        <Label fx:id="closeCheck" layoutX="288.0" layoutY="446.0" onMouseClicked="#closeCheck" text="Delete" textFill="#2381c9" underline="true" visible="false" />
+                        <ProgressBar fx:id="psbar" layoutX="239.0" layoutY="486.0" prefWidth="200.0" progress="0.0" visible="false" />
+                        <Label fx:id="psstate" layoutX="166.0" layoutY="487.0" prefHeight="17.0" prefWidth="43.0" text="0%" visible="false" />
+                        <Label fx:id="checkitem" layoutX="166.0" layoutY="520.0" onMouseClicked="#addItem" text="Add an Item" textFill="#2381c9" underline="true" visible="false" />
+                  <VBox fx:id="itembox" layoutX="175.0" layoutY="540.0" prefHeight="-Infinity" prefWidth="-Infinity" visible="true">
+                     <children>
+                     </children>
+                  </VBox>
+                  <Label fx:id="track" layoutX="381.0" layoutY="156.0" text="ON TRACK" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
